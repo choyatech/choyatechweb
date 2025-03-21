@@ -1,5 +1,4 @@
 ---
-import Footer from "@/components/layout/Footer";
 import Blog from "@/components/layout/Home/Blog";
 import Customers from "@/components/layout/Home/Customers";
 import Facts from "@/components/layout/Home/Facts";
@@ -11,7 +10,7 @@ import Showcase from "@/components/layout/Home/Showcase";
 import MainLayout from "@/layouts/MainLayout.astro";
 
 //Importamos el nuevo footer ya actualzado a astro ya no se usa el .tsx
-import Footer1 from "@/components/layout/Footer1.astro";
+import Footer from "@/components/layout/Footer.astro";
 import "@/styles/globals.css";
 
 const title = "Choya Tech - Diseño de páginas web en Baja California Sur";
@@ -32,5 +31,5 @@ const canonicalUrl = "https://choya.tech";
   <Customers />
   <LowHero />
   <Faq client:visible />
-  <Footer1 />
+  <Footer />
 </MainLayout>

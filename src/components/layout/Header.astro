@@ -1,0 +1,31 @@
+---
+import MobileDrawer from "@/components/ui/MobileDrawer";
+---
+
+<header class="container flex items-center pt-8">
+    <div>
+        <a href="https://choya.tech/" class="flex gap-4 items-center" aria-label="Choya.Tech Home">
+            <span class="font-header text-4xl hover:underline text-purple-500">
+                Choya.Tech
+            </span>
+        </a>
+    </div>
+    <div class="ms-auto flex items-center">
+        <!-- Menú en pantallas grandes -->
+        <div class="ms-auto hidden md:flex gap-2">
+            <nav>
+                <ul class="flex gap-4">
+                    <li><a href="https://choya.tech/#who-is-for" class="hover:underline text-black/60">¿Para quién es?</a></li>
+                    <li><a href="https://choya.tech/#blog" class="hover:underline text-black/60">Blog</a></li>
+                    <li><a href="https://choya.tech/#how-does-it-work" class="hover:underline text-black/60">¿Cómo funciona?</a></li>
+                    <li><a href="https://choya.tech/#our-customers" class="hover:underline text-black/60">Nuestros Clientes</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Menú móvil con Drawer -->
+        <div class="block md:hidden">
+            <MobileDrawer client:load />
+        </div>
+    </div>
+</header>

@@ -60,7 +60,7 @@ export default function Header() {
         <div className="ms-auto block md:hidden">
           <Drawer>
             <DrawerTrigger>
-              <Button variant="outline">
+              <Button variant="link">
                 <Menu />
               </Button>
             </DrawerTrigger>

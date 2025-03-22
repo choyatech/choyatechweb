@@ -11,6 +11,9 @@ import MainLayout from "@/layouts/MainLayout.astro";
 
 //Importamos el nuevo footer ya actualzado a astro ya no se usa el .tsx
 import Footer from "@/components/layout/Footer.astro";
+
+// El Header se importa en el MainLayout.astro
+
 import "@/styles/globals.css";
 
 const title = "Choya Tech - Diseño de páginas web en Baja California Sur";
@@ -24,6 +27,7 @@ const canonicalUrl = "https://choya.tech";
 
 <MainLayout {title} {description} {keywords} {author} {canonicalUrl}>
   <Hero client:visible />
+  
   <Showcase />
   <Blog />
   <Facts />
@@ -31,5 +35,5 @@ const canonicalUrl = "https://choya.tech";
   <Customers />
   <LowHero />
   <Faq client:visible />
-  <Footer />
+  <Footer/>
 </MainLayout>

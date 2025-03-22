@@ -3,16 +3,13 @@ import Blog from "@/components/layout/Home/Blog";
 import Customers from "@/components/layout/Home/Customers";
 import Facts from "@/components/layout/Home/Facts";
 import Faq from "@/components/layout/Home/Faq";
-import Hero from "@/components/layout/Home/Hero";
 import LowHero from "@/components/layout/Home/LowHero";
 import Process from "@/components/layout/Home/Process";
 import Showcase from "@/components/layout/Home/Showcase";
 import MainLayout from "@/layouts/MainLayout.astro";
-
-//Importamos el nuevo footer ya actualzado a astro ya no se usa el .tsx
 import Footer from "@/components/layout/Footer.astro";
-
 // El Header se importa en el MainLayout.astro
+import Hero from "@/components/layout/Home/Hero1.astro";
 
 import "@/styles/globals.css";
 
@@ -27,7 +24,6 @@ const canonicalUrl = "https://choya.tech";
 
 <MainLayout {title} {description} {keywords} {author} {canonicalUrl}>
   <Hero client:visible />
-  
   <Showcase />
   <Blog />
   <Facts />
@@ -35,5 +31,5 @@ const canonicalUrl = "https://choya.tech";
   <Customers />
   <LowHero />
   <Faq client:visible />
-  <Footer/>
+  <Footer />
 </MainLayout>

@@ -5,7 +5,7 @@ const Process = () => {
         <h3 className="text-3xl font-extrabold grid text-neutral-800">
           ¿Cómo Funciona Choya Tech?
           <span className="text-base font-normal">
-            Procesos de Desarrollo Web y Software
+            Procesos de Desarrol2 lo Web y Software
           </span>
         </h3>
         <hr className="w-24 h-2 mx-auto my-2 bg-blue-500 border-0 dark:bg-blue-300" />

@@ -1,0 +1,22 @@
+---
+import FAQAccordion from "src/components/ui/Acordion.tsx"; // Ajusta la ruta según tu estructura
+---
+
+<section class="bg-neutral-100 w-full">
+    <main class="container flex items-center py-12">
+        <div class="mx-auto md:2/3 lg:w-1/2">
+            <h3 class="text-4xl mb-2 font-bold">
+                Estamos aquí para resolver tus dudas.
+            </h3>
+            <p class="mb-8">
+                Respondemos a las preguntas más frecuentes sobre el desarrollo y
+                mantenimiento de sitios para que tengas toda la información que
+                necesitas.
+            </p>
+            <FAQAccordion client:load />
+        </div>
+        <div class="hidden lg:flex lg:mt-0 justify-center">
+            <img src="/miroodles_3.png" alt="Proceso de desarrollo y ejecución" />
+        </div>
+    </main>
+</section>

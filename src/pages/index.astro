@@ -1,17 +1,16 @@
 ---
-import Footer from "@/components/layout/Footer";
-import Blog from "@/components/layout/Home/Blog";
-import Customers from "@/components/layout/Home/Customers";
-import Facts from "@/components/layout/Home/Facts";
-import Faq from "@/components/layout/Home/Faq";
-import Hero from "@/components/layout/Home/Hero";
-import LowHero from "@/components/layout/Home/LowHero";
-import Process from "@/components/layout/Home/Process";
-import Showcase from "@/components/layout/Home/Showcase";
+import Blog from "@/components/layout/Home/Blog.astro";
+import Customers from "@/components/layout/Home/Customers.astro";
+import Facts from "@/components/layout/Home/Facts.astro";
+import Faq from "@/components/layout/Home/Faq.astro";
+import LowHero from "@/components/layout/Home/LowHero.astro";
+import Process from "@/components/layout/Home/Process.astro";
+import Showcase from "@/components/layout/Home/Showcase.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
+import Footer from "@/components/layout/Footer.astro";
+// El Header se importa en el MainLayout.astro
+import Hero from "@/components/layout/Home/Hero.astro";
 
-//Importamos el nuevo footer ya actualzado a astro ya no se usa el .tsx
-import Footer1 from "@/components/layout/Footer1.astro";
 import "@/styles/globals.css";
 
 const title = "Choya Tech - Diseño de páginas web en Baja California Sur";
@@ -32,5 +31,5 @@ const canonicalUrl = "https://choya.tech";
   <Customers />
   <LowHero />
   <Faq client:visible />
-  <Footer1 />
+  <Footer />
 </MainLayout>

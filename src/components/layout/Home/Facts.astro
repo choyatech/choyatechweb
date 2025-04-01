@@ -1,0 +1,37 @@
+---
+import { Check, MousePointerClick, Star } from "lucide-react";
+---
+
+<section class="bg-amber-400 text-neutral-950 py-12" id="facts">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+            <div class="flex flex-col items-center my-2">
+                <MousePointerClick
+                className="mb-4"
+                size="48px"
+                aria-hidden="true"/>
+                <span class="text-3xl font-extrabold">1K</span>
+                <p class="font-normal text-sm mt-2 sm:w-1/2">
+                    Los clientes reciben +1000 clics cada mes
+                </p>
+            </div>
+            <div class="flex flex-col items-center my-2">
+                <Check
+                className="mb-4" size="48px" aria-hidden="true"/>
+                <span class="text-3xl font-extrabold" >92%</span>
+                <p class="font-normal text-sm mt-2 sm:w-1/2">
+                    Tenemos la mejor tasa de satisfaccion de nuestros increíbles clientes.
+                </p>
+            </div>
+            <div class="flex flex-col items-center my-2">
+                <Star
+                className="mb-4" size="48px" aria-hidden="true"/>
+                <span class="text-3xl font-extrabold" >4.9/5.0</span>
+                <p class="font-normal text-sm mt-2 sm:w-1/2">
+                    Calificación promedio de nuestros clientes.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
